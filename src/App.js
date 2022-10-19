@@ -1,15 +1,15 @@
-import { Children } from "react";
 import "./App.css";
-import Header from "./components/header/Header";
+import Header from "./components/Header";
+import React from "react";
+import Meme from "./components/Meme";
 
-
-const App = (children) => {
-  return
-    <Header >
-        <div>
-          <img src=""/>
-        </div>
-    </Header>/>
+const App = () => {
+  return (
+    <>
+      <Header />
+      <Meme />
+    </>
+  );
 };
 
 export default App;

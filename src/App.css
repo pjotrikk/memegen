@@ -1,3 +1,6 @@
+body {
+  max-width: 600px;
+}
 .navbar {
   width: 550px;
   height: 65px;
@@ -6,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 20px;
 }
 
 .trollface {
@@ -34,14 +38,14 @@
   padding-right: 25px;
 }
 
-form {
+.form {
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
   gap: 17px;
   width: 550px;
   margin-top: 30px;
   margin-left: 20px;
-  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .form--input {
@@ -59,4 +63,38 @@ form {
   color: white;
   border: none;
   cursor: pointer;
+}
+.meme {
+  position: relative;
+}
+
+.meme--image {
+  max-width: 550px;
+  border-radius: 3px;
+  margin-left: 20px;
+}
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
